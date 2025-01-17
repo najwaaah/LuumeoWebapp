@@ -1,0 +1,296 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static "web/img/LUUMEO-bg.png" %}" alt="im" data-aos="fade-in">
+
+      <div class="container">
+        <h2 data-aos="fade-up" data-aos-delay="100" class="clr2">LUUMEO<br>Institute of Accounts</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Start Your Accounting Journey Today!</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="{% url "contact" %}" class="btn-get-started">Get Started</a>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static "web/img/laplum.png" %}" class="img-fluid laplum" alt="">
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Accounting Basics to Professional Mastery</h3>
+            <p class="fst-italic">
+              Transform Your Passion into Profession with Top-Tier Practical Accounting Course <strong>DPAT -Diploma in Practical Accounting Training.</strong>
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Whether you're aiming for a career in finance, looking to upskill, or wanting to take your accounting knowledge to the next level, LUUMEO Institute of Accounts is your gateway to success.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Enroll now and experience the LUUMEO difference: 100% practical, Flexible, and Professional Accounting education that’s aligned with the reality.</span></li>
+             
+            </ul>
+            <a href="{% url "about" %}" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Counts Section -->
+    <section id="counts" class="section counts light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Students</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Batches</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Trainers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Counts Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Why Choose LUUMEO Institute of Accounts?</h3>
+              <p> Accounting from Absolute Basics to Advanced Level:</p>
+              <p> 
+                Our curriculum covers everything from foundational accounting principles to advanced practices, blending theory with real-world applications. You'll gain a deep understanding of essential concepts and practical skills, ensuring you're fully prepared for professional success at every step.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-xl-4">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>100% Practical-Based Classes</h4>
+               <p>We emphasize hands-on learning with real-world exposure, helping you apply accounting concepts in practical scenarios. Our approach ensures you gain the skills and confidence to tackle professional challenges and excel in the workplace.
+                  </p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Professional Mentors & Chartered Accountants</h4>
+                  <p>Learn from experienced professionals! Our mentors, Chartered Accountants and accounting experts, bring real-world experience to guide you through your learning journey.
+                  </p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Most Updated and Well-Prepared Syllabus</h4>
+                  <p>The LUUMEO syllabus, crafted by top accounting professionals and consultants, stays up-to-date with industry standards, ensuring you learn the most relevant and modern accounting techniques.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Fundamentals of Accounting</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color: #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Business Accouting</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Income Tax</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">TDS & TCS</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Goods and Service Tax(GST)</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Tally Prime</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Quik Books</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Zoho Books</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">MS Excel,Microsoft 365 & Power BI</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">UAE VAT & Corporate Tax</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color:  #29cc61;"></i>
+              <h3><a href="" class="stretched-link">Company Filings</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color: #29cc61;"></i>
+              <h3><a href="" class="stretched-link">PF & ESI</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Courses</h2>
+        <p>Popular Course</p>
+      </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="row">
+        {% for i in course %}
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="course-item">
+              <img src="{{i.image.url}}" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <p class="category">{{i.name}}</p>
+                  
+                </div>
+
+                <h3><a href="course-details.html">{{i.full_name}}</a></h3>
+                <p class="description">{{i.description}}</p>
+                
+                  
+                 
+                
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
+
+         
+
+          
+
+       
+        {% endfor %}
+      </div>
+    </div>
+    
+    </section><!-- /Courses Section -->
+
+
+  </main>
+
+  
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+ {% endblock %}
