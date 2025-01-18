@@ -21,8 +21,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="{% url "index" %}">Home</a></li>
-            <li class="{% url "contact" %}">Contact</li>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="{% url 'contact' %}">Contact</li>
           </ol>
         </div>
       </nav>
@@ -68,23 +68,23 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
+                {% csrf_token %}
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  {{ form.name }}
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  {{ form.email }}
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  {{ form.phone }}
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  {{ form.message }}
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -115,3 +115,48 @@
   <div id="preloader"></div>
 
  {% endblock %}
+
+ {% block javascript %}
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".php-email-form").on("submit", function(e) {
+      e.preventDefault();
+
+      // Serialize form data
+      let formData = $(this).serialize();
+
+      // Show loading animation
+      $(".loading").show();
+      $(".error-message").hide();
+      $(".sent-message").hide();
+
+      // Perform AJAX request
+      $.ajax({
+        url: "", // Keep empty for current URL
+        method: "POST",
+        data: formData,
+        success: function(response) {
+          $(".loading").hide();
+          if (response.success) {
+            $(".sent-message").text(response.message).show();
+            $(".php-email-form")[0].reset();
+          } else {
+            let errorText = "";
+            $.each(response.errors, function(field, errors) {
+              errorText += errors.join(" ") + "<br>";
+            });
+            $(".error-message").html(errorText).show();
+          }
+        },
+        error: function() {
+          $(".loading").hide();
+          $(".error-message").text("An error occurred while submitting the form. Please try again.").show();
+        }
+      });
+    });
+  });
+</script>
+
+{% endblock javascript %}
